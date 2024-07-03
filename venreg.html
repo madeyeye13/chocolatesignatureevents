@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Sourcing & Booking</title>
+    <!--==========FavIcon========-->
+    <link rel="icon" type="image/x-icon" href="/image/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--============Google Fonts================-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <!--====================Font Awesome======================-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
+     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <!--=====Cascading Style Sheet====-->
+
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="service.css">
+
+
+     <!--=====Media Query====-->
+
+     <link rel="stylesheet" href="mediaquery.css">
+
+    <!--============ Boxicons ===============-->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!------------AOS--------------->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+
+
+
+
+<body>
+
+    <header id="heading-2">
+
+        <div  class="menu-btns hamburger-menu">
+          <i class="fa-solid fa-bars open" width="70"> </i>
+          <i id="close" class="fa-solid fa-xmark hide" width="70"></i>
+        </div>
+      
+      
+      
+      
+      
+        <div class="logo-card">
+
+        <a href="index.html"><img src="image/logo.png"></a>
+
+        </div>
+
+
+
+        <div id="menu-bar" class="slide-out">
+
+          <img src="image/logo.png" width="100%">
+        
+            <div class="nav-link-card">
+              
+              <div class="nav-link">  <a href="index.html">Home</a></div>
+                     
+              <div class="nav-link">  <a href="about.html">Services</a></div>
+  
+              <div class="nav-link">   <a href="services.html">About Us</a></div>
+                   
+              <div class="nav-link">   <a href="properties.html">Gallery</a></div>
+                    
+              <div class="nav-link">   <a href="testimonial.html">Booking</a></div>
+          
+              <div  class="nav-link">   <a href="contacts.html">Contact Us</a></div>
+  
+              <!-- <div class="nav-link">   <a href="https://forms.gle/76Qfqu1pCPBZt23s6">Affiliate</a></div> -->
+          
+            </div>
+            
+          
+        </div>
+
+
+
+
+        
+      
+      
+      </header>
+
+      <!---================Hero Section=======================-->
+
+      
+      <section id="vendor">
+        <div class="vendor-text">
+            <h2>Vending Sourcing & Booking</h2>
+        </div>
+      </section>
+
+
+
+      <!---------------------Browse By Category------------------------>
+      
+      <section id="category">
+
+        <div class="bbc2">
+          <h4 class="handwriting">We source for vendors</h4>
+        </div>
+
+      </section>
+
+
+
+
+
+      <!----------Vendor Registration-------------->
+
+
+
+      <section id="vendor-registration">
+        <h2>Vendor Registration Form</h2>
+        <div class="vendor-registration-container">
+            <p>Kindly fill out the vendor registration form below and we will get back to you after review.</p>
+            <form id="vendor-form" action="https://formspree.io/f/xzzpbvdk" method="POST">
+                <label for="name">Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="bio">Tell Us About You (Short Bio)</label>
+                <textarea id="bio" name="bio" rows="4"></textarea>
+    
+                <label for="company-name">Company's Or Brand's Legal Name</label>
+                <input type="text" id="company-name" name="company-name">
+    
+                <label for="products-services">What kind of products or services does your company offer?</label>
+                <textarea id="products-services" name="products-services" rows="4"></textarea>
+    
+                <label for="website">Company Website</label>
+                <input type="url" id="website" name="website">
+    
+                <label for="address">Company Address <span class="required">*</span></label>
+                <input type="text" id="address" name="address" required>
+    
+                <label for="city">City <span class="required">*</span></label>
+                <input type="text" id="city" name="city" required>
+    
+                <label for="state">State <span class="required">*</span></label>
+                <input type="text" id="state" name="state" required>
+    
+                <label for="country">Country</label>
+                <div class="custom-dropdown" onclick="toggleDropdown()">
+                    <span id="selected-country">Afghanistan</span>
+                    <i class="fa-solid fa-caret-down dropdown-icon"></i>
+                </div>
+    
+                <label for="rep-name">Name of the person representing the company <span class="required">*</span></label>
+                <input type="text" id="rep-name" name="rep-name" required>
+    
+                <label for="rep-email">Email of the person representing the company <span class="required">*</span></label>
+                <input type="email" id="rep-email" name="rep-email" required>
+    
+                <label for="rep-phone">Phone No <span class="required">*</span></label>
+                <input type="tel" id="rep-phone" name="rep-phone" required>
+    
+                <button type="submit">
+                    <span class="loading-dots" style="display: none;"></span>Submit
+                </button>
+                <p id="form-response" style="display: none;">Thanks for filling the form!</p>
+            </form>
+        </div>
+    </section>
+
+        <!------------------------------LISTOF COUNTRIES------------------------------------>
+    
+        <div id="overlay" onclick="toggleDropdown()"></div>
+        <div id="dropdownOverlay">
+            <div class="dropdown-frame">
+                <div class="dropdown-list">
+                    <label>Afghanistan <input type="radio" name="country" value="Afghanistan"></label>
+                    <hr>
+                    <label>Albania <input type="radio" name="country" value="Albania"></label>
+                    <hr>
+                    <label>Algeria <input type="radio" name="country" value="Algeria"></label>
+                    <hr>
+                    <label>Andorra <input type="radio" name="country" value="Andorra"></label>
+                    <hr>
+                    <label>Angola <input type="radio" name="country" value="Angola"></label>
+                    <hr>
+                    <label>Antigua and Barbuda <input type="radio" name="country" value="Antigua and Barbuda"></label>
+                    <hr>
+                    <label>Argentina <input type="radio" name="country" value="Argentina"></label>
+                    <hr>
+                    <label>Armenia <input type="radio" name="country" value="Armenia"></label>
+                    <hr>
+                    <label>Australia <input type="radio" name="country" value="Australia"></label>
+                    <hr>
+                    <label>Austria <input type="radio" name="country" value="Austria"></label>
+                    <hr>
+                    <label>Azerbaijan <input type="radio" name="country" value="Azerbaijan"></label>
+                    <hr>
+                    <label>Bahamas <input type="radio" name="country" value="Bahamas"></label>
+                    <hr>
+                    <label>Bahrain <input type="radio" name="country" value="Bahrain"></label>
+                    <hr>
+                    <label>Bangladesh <input type="radio" name="country" value="Bangladesh"></label>
+                    <hr>
+                    <label>Barbados <input type="radio" name="country" value="Barbados"></label>
+                    <hr>
+                    <label>Belarus <input type="radio" name="country" value="Belarus"></label>
+                    <hr>
+                    <label>Belgium <input type="radio" name="country" value="Belgium"></label>
+                    <hr>
+                    <label>Belize <input type="radio" name="country" value="Belize"></label>
+                    <hr>
+                    <label>Benin <input type="radio" name="country" value="Benin"></label>
+                    <hr>
+                    <label>Bhutan <input type="radio" name="country" value="Bhutan"></label>
+                    <hr>
+                    <label>Bolivia <input type="radio" name="country" value="Bolivia"></label>
+                    <hr>
+                    <label>Bosnia and Herzegovina <input type="radio" name="country" value="Bosnia and Herzegovina"></label>
+                    <hr>
+                    <label>Botswana <input type="radio" name="country" value="Botswana"></label>
+                    <hr>
+                    <label>Brazil <input type="radio" name="country" value="Brazil"></label>
+                    <hr>
+                    <label>Brunei <input type="radio" name="country" value="Brunei"></label>
+                    <hr>
+                    <label>Bulgaria <input type="radio" name="country" value="Bulgaria"></label>
+                    <hr>
+                    <label>Burkina Faso <input type="radio" name="country" value="Burkina Faso"></label>
+                    <hr>
+                    <label>Burundi <input type="radio" name="country" value="Burundi"></label>
+                    <hr>
+                    <label>Cabo Verde <input type="radio" name="country" value="Cabo Verde"></label>
+                    <hr>
+                    <label>Cambodia <input type="radio" name="country" value="Cambodia"></label>
+                    <hr>
+                    <label>Cameroon <input type="radio" name="country" value="Cameroon"></label>
+                    <hr>
+                    <label>Canada <input type="radio" name="country" value="Canada"></label>
+                    <hr>
+                    <label>Central African Republic <input type="radio" name="country" value="Central African Republic"></label>
+                    <hr>
+                    <label>Chad <input type="radio" name="country" value="Chad"></label>
+                    <hr>
+                    <label>Chile <input type="radio" name="country" value="Chile"></label>
+                    <hr>
+                    <label>China <input type="radio" name="country" value="China"></label>
+                    <hr>
+                    <label>Colombia <input type="radio" name="country" value="Colombia"></label>
+                    <hr>
+                    <label>Comoros <input type="radio" name="country" value="Comoros"></label>
+                    <hr>
+                    <label>Congo, Democratic Republic of the <input type="radio" name="country" value="Congo, Democratic Republic of the"></label>
+                    <hr>
+                    <label>Congo, Republic of the <input type="radio" name="country" value="Congo, Republic of the"></label>
+                    <hr>
+                    <label>Costa Rica <input type="radio" name="country" value="Costa Rica"></label>
+                    <hr>
+                    <label>Croatia <input type="radio" name="country" value="Croatia"></label>
+                    <hr>
+                    <label>Cuba <input type="radio" name="country" value="Cuba"></label>
+                    <hr>
+                    <label>Cyprus <input type="radio" name="country" value="Cyprus"></label>
+                    <hr>
+                    <label>Czech Republic <input type="radio" name="country" value="Czech Republic"></label>
+                    <hr>
+                    <label>Denmark <input type="radio" name="country" value="Denmark"></label>
+                    <hr>
+                    <label>Djibouti <input type="radio" name="country" value="Djibouti"></label>
+                    <hr>
+                    <label>Dominica <input type="radio" name="country" value="Dominica"></label>
+                    <hr>
+                    <label>Dominican Republic <input type="radio" name="country" value="Dominican Republic"></label>
+                    <hr>
+                    <label>Ecuador <input type="radio" name="country" value="Ecuador"></label>
+                    <hr>
+                    <label>Egypt <input type="radio" name="country" value="Egypt"></label>
+                    <hr>
+                    <label>El Salvador <input type="radio" name="country" value="El Salvador"></label>
+                    <hr>
+                    <label>Equatorial Guinea <input type="radio" name="country" value="Equatorial Guinea"></label>
+                    <hr>
+                    <label>Eritrea <input type="radio" name="country" value="Eritrea"></label>
+                    <hr>
+                    <label>Estonia <input type="radio" name="country" value="Estonia"></label>
+                    <hr>
+                    <label>Eswatini <input type="radio" name="country" value="Eswatini"></label>
+                    <hr>
+                    <label>Ethiopia <input type="radio" name="country" value="Ethiopia"></label>
+                    <hr>
+                    <label>Fiji <input type="radio" name="country" value="Fiji"></label>
+                    <hr>
+                    <label>Finland <input type="radio" name="country" value="Finland"></label>
+                    <hr>
+                    <label>France <input type="radio" name="country" value="France"></label>
+                    <hr>
+                    <label>Gabon <input type="radio" name="country" value="Gabon"></label>
+                    <hr>
+                    <label>Gambia <input type="radio" name="country" value="Gambia"></label>
+                    <hr>
+                    <label>Georgia <input type="radio" name="country" value="Georgia"></label>
+                    <hr>
+                    <label>Germany <input type="radio" name="country" value="Germany"></label>
+                    <hr>
+                    <label>Ghana <input type="radio" name="country" value="Ghana"></label>
+                    <hr>
+                    <label>Greece <input type="radio" name="country" value="Greece"></label>
+                    <hr>
+                    <label>Grenada <input type="radio" name="country" value="Grenada"></label>
+                    <hr>
+                    <label>Guatemala <input type="radio" name="country" value="Guatemala"></label>
+                    <hr>
+                    <label>Guinea <input type="radio" name="country" value="Guinea"></label>
+                    <hr>
+                    <label>Guinea-Bissau <input type="radio" name="country" value="Guinea-Bissau"></label>
+                    <hr>
+                    <label>Guyana <input type="radio" name="country" value="Guyana"></label>
+                    <hr>
+                    <label>Haiti <input type="radio" name="country" value="Haiti"></label>
+                    <hr>
+                    <label>Honduras <input type="radio" name="country" value="Honduras"></label>
+                    <hr>
+                    <label>Hungary <input type="radio" name="country" value="Hungary"></label>
+                    <hr>
+                    <label>Iceland <input type="radio" name="country" value="Iceland"></label>
+                    <hr>
+                    <label>India <input type="radio" name="country" value="India"></label>
+                    <hr>
+                    <label>Indonesia <input type="radio" name="country" value="Indonesia"></label>
+                    <hr>
+                    <label>Iran <input type="radio" name="country" value="Iran"></label>
+                    <hr>
+                    <label>Iraq <input type="radio" name="country" value="Iraq"></label>
+                    <hr>
+                    <label>Ireland <input type="radio" name="country" value="Ireland"></label>
+                    <hr>
+                    <label>Israel <input type="radio" name="country" value="Israel"></label>
+                    <hr>
+                    <label>Italy <input type="radio" name="country" value="Italy"></label>
+                    <hr>
+                    <label>Jamaica <input type="radio" name="country" value="Jamaica"></label>
+                    <hr>
+                    <label>Japan <input type="radio" name="country" value="Japan"></label>
+                    <hr>
+                    <label>Jordan <input type="radio" name="country" value="Jordan"></label>
+                    <hr>
+                    <label>Kazakhstan <input type="radio" name="country" value="Kazakhstan"></label>
+                    <hr>
+                    <label>Kenya <input type="radio" name="country" value="Kenya"></label>
+                    <hr>
+                    <label>Kiribati <input type="radio" name="country" value="Kiribati"></label>
+                    <hr>
+                    <label>Korea, North <input type="radio" name="country" value="Korea, North"></label>
+                    <hr>
+                    <label>Korea, South <input type="radio" name="country" value="Korea, South"></label>
+                    <hr>
+                    <label>Kosovo <input type="radio" name="country" value="Kosovo"></label>
+                    <hr>
+                    <label>Kuwait <input type="radio" name="country" value="Kuwait"></label>
+                    <hr>
+                    <label>Kyrgyzstan <input type="radio" name="country" value="Kyrgyzstan"></label>
+                    <hr>
+                    <label>Laos <input type="radio" name="country" value="Laos"></label>
+                    <hr>
+                    <label>Latvia <input type="radio" name="country" value="Latvia"></label>
+                    <hr>
+                    <label>Lebanon <input type="radio" name="country" value="Lebanon"></label>
+                    <hr>
+                    <label>Lesotho <input type="radio" name="country" value="Lesotho"></label>
+                    <hr>
+                    <label>Liberia <input type="radio" name="country" value="Liberia"></label>
+                    <hr>
+                    <label>Libya <input type="radio" name="country" value="Libya"></label>
+                    <hr>
+                    <label>Liechtenstein <input type="radio" name="country" value="Liechtenstein"></label>
+                    <hr>
+                    <label>Lithuania <input type="radio" name="country" value="Lithuania"></label>
+                    <hr>
+                    <label>Luxembourg <input type="radio" name="country" value="Luxembourg"></label>
+                    <hr>
+                    <label>Madagascar <input type="radio" name="country" value="Madagascar"></label>
+                    <hr>
+                    <label>Malawi <input type="radio" name="country" value="Malawi"></label>
+                    <hr>
+                    <label>Malaysia <input type="radio" name="country" value="Malaysia"></label>
+                    <hr>
+                    <label>Maldives <input type="radio" name="country" value="Maldives"></label>
+                    <hr>
+                    <label>Mali <input type="radio" name="country" value="Mali"></label>
+                    <hr>
+                    <label>Malta <input type="radio" name="country" value="Malta"></label>
+                    <hr>
+                    <label>Marshall Islands <input type="radio" name="country" value="Marshall Islands"></label>
+                    <hr>
+                    <label>Mauritania <input type="radio" name="country" value="Mauritania"></label>
+                    <hr>
+                    <label>Mauritius <input type="radio" name="country" value="Mauritius"></label>
+                    <hr>
+                    <label>Mexico <input type="radio" name="country" value="Mexico"></label>
+                    <hr>
+                    <label>Micronesia <input type="radio" name="country" value="Micronesia"></label>
+                    <hr>
+                    <label>Moldova <input type="radio" name="country" value="Moldova"></label>
+                    <hr>
+                    <label>Monaco <input type="radio" name="country" value="Monaco"></label>
+                    <hr>
+                    <label>Mongolia <input type="radio" name="country" value="Mongolia"></label>
+                    <hr>
+                    <label>Montenegro <input type="radio" name="country" value="Montenegro"></label>
+                    <hr>
+                    <label>Morocco <input type="radio" name="country" value="Morocco"></label>
+                    <hr>
+                    <label>Mozambique <input type="radio" name="country" value="Mozambique"></label>
+                    <hr>
+                    <label>Myanmar <input type="radio" name="country" value="Myanmar"></label>
+<hr>
+<label>Namibia <input type="radio" name="country" value="Namibia"></label>
+<hr>
+<label>Nauru <input type="radio" name="country" value="Nauru"></label>
+<hr>
+<label>Nepal <input type="radio" name="country" value="Nepal"></label>
+<hr>
+<label>Netherlands <input type="radio" name="country" value="Netherlands"></label>
+<hr>
+<label>New Zealand <input type="radio" name="country" value="New Zealand"></label>
+<hr>
+<label>Nicaragua <input type="radio" name="country" value="Nicaragua"></label>
+<hr>
+<label>Niger <input type="radio" name="country" value="Niger"></label>
+<hr>
+<label>Nigeria <input type="radio" name="country" value="Nigeria"></label>
+<hr>
+<label>North Macedonia <input type="radio" name="country" value="North Macedonia"></label>
+<hr>
+<label>Norway <input type="radio" name="country" value="Norway"></label>
+<hr>
+<label>Oman <input type="radio" name="country" value="Oman"></label>
+<hr>
+<label>Pakistan <input type="radio" name="country" value="Pakistan"></label>
+<hr>
+<label>Palau <input type="radio" name="country" value="Palau"></label>
+<hr>
+<label>Palestine <input type="radio" name="country" value="Palestine"></label>
+<hr>
+<label>Panama <input type="radio" name="country" value="Panama"></label>
+<hr>
+<label>Papua New Guinea <input type="radio" name="country" value="Papua New Guinea"></label>
+<hr>
+<label>Paraguay <input type="radio" name="country" value="Paraguay"></label>
+<hr>
+<label>Peru <input type="radio" name="country" value="Peru"></label>
+<hr>
+<label>Philippines <input type="radio" name="country" value="Philippines"></label>
+<hr>
+<label>Poland <input type="radio" name="country" value="Poland"></label>
+<hr>
+<label>Portugal <input type="radio" name="country" value="Portugal"></label>
+<hr>
+<label>Qatar <input type="radio" name="country" value="Qatar"></label>
+<hr>
+<label>Romania <input type="radio" name="country" value="Romania"></label>
+<hr>
+<label>Russia <input type="radio" name="country" value="Russia"></label>
+<hr>
+<label>Rwanda <input type="radio" name="country" value="Rwanda"></label>
+<hr>
+<label>Saint Kitts and Nevis <input type="radio" name="country" value="Saint Kitts and Nevis"></label>
+<hr>
+<label>Saint Lucia <input type="radio" name="country" value="Saint Lucia"></label>
+<hr>
+<label>Saint Vincent and the Grenadines <input type="radio" name="country" value="Saint Vincent and the Grenadines"></label>
+<hr>
+<label>Samoa <input type="radio" name="country" value="Samoa"></label>
+<hr>
+<label>San Marino <input type="radio" name="country" value="San Marino"></label>
+<hr>
+<label>Sao Tome and Principe <input type="radio" name="country" value="Sao Tome and Principe"></label>
+<hr>
+<label>Saudi Arabia <input type="radio" name="country" value="Saudi Arabia"></label>
+<hr>
+<label>Senegal <input type="radio" name="country" value="Senegal"></label>
+<hr>
+<label>Serbia <input type="radio" name="country" value="Serbia"></label>
+<hr>
+<label>Seychelles <input type="radio" name="country" value="Seychelles"></label>
+<hr>
+<label>Sierra Leone <input type="radio" name="country" value="Sierra Leone"></label>
+<hr>
+<label>Singapore <input type="radio" name="country" value="Singapore"></label>
+<hr>
+<label>Slovakia <input type="radio" name="country" value="Slovakia"></label>
+<hr>
+<label>Slovenia <input type="radio" name="country" value="Slovenia"></label>
+<hr>
+<label>Solomon Islands <input type="radio" name="country" value="Solomon Islands"></label>
+<hr>
+<label>Somalia <input type="radio" name="country" value="Somalia"></label>
+<hr>
+<label>South Africa <input type="radio" name="country" value="South Africa"></label>
+<hr>
+<label>South Sudan <input type="radio" name="country" value="South Sudan"></label>
+<hr>
+<label>Spain <input type="radio" name="country" value="Spain"></label>
+<hr>
+<label>Sri Lanka <input type="radio" name="country" value="Sri Lanka"></label>
+<hr>
+<label>Sudan <input type="radio" name="country" value="Sudan"></label>
+<hr>
+<label>Suriname <input type="radio" name="country" value="Suriname"></label>
+<hr>
+<label>Sweden <input type="radio" name="country" value="Sweden"></label>
+<hr>
+<label>Switzerland <input type="radio" name="country" value="Switzerland"></label>
+<hr>
+<label>Syria <input type="radio" name="country" value="Syria"></label>
+<hr>
+<label>Taiwan <input type="radio" name="country" value="Taiwan"></label>
+<hr>
+<label>Tajikistan <input type="radio" name="country" value="Tajikistan"></label>
+<hr>
+<label>Tanzania <input type="radio" name="country" value="Tanzania"></label>
+<hr>
+<label>Thailand <input type="radio" name="country" value="Thailand"></label>
+<hr>
+<label>Timor-Leste <input type="radio" name="country" value="Timor-Leste"></label>
+<hr>
+<label>Togo <input type="radio" name="country" value="Togo"></label>
+<hr>
+<label>Tonga <input type="radio" name="country" value="Tonga"></label>
+<hr>
+<label>Trinidad and Tobago <input type="radio" name="country" value="Trinidad and Tobago"></label>
+<hr>
+<label>Tunisia <input type="radio" name="country" value="Tunisia"></label>
+<hr>
+<label>Turkey <input type="radio" name="country" value="Turkey"></label>
+<hr>
+<label>Turkmenistan <input type="radio" name="country" value="Turkmenistan"></label>
+<hr>
+<label>Tuvalu <input type="radio" name="country" value="Tuvalu"></label>
+<hr>
+<label>Uganda <input type="radio" name="country" value="Uganda"></label>
+<hr>
+<label>Ukraine <input type="radio" name="country" value="Ukraine"></label>
+<hr>
+<label>United Arab Emirates <input type="radio" name="country" value="United Arab Emirates"></label>
+<hr>
+<label>United Kingdom <input type="radio" name="country" value="United Kingdom"></label>
+<hr>
+<label>United States of America <input type="radio" name="country" value="United States of America"></label>
+<hr>
+<label>Uruguay <input type="radio" name="country" value="Uruguay"></label>
+<hr>
+<label>Uzbekistan <input type="radio" name="country" value="Uzbekistan"></label>
+<hr>
+<label>Vanuatu <input type="radio" name="country" value="Vanuatu"></label>
+<hr>
+<label>Vatican City <input type="radio" name="country" value="Vatican City"></label>
+<hr>
+<label>Venezuela <input type="radio" name="country" value="Venezuela"></label>
+<hr>
+<label>Vietnam <input type="radio" name="country" value="Vietnam"></label>
+<hr>
+<label>Yemen <input type="radio" name="country" value="Yemen"></label>
+<hr>
+<label>Zambia <input type="radio" name="country" value="Zambia"></label>
+<hr>
+<label>Zimbabwe <input type="radio" name="country" value="Zimbabwe"></label>
+<hr>
+                </div>
+            </div>
+        </div>
+        
+    
+    
+    
+    
+    
+
+      
+      <!---Client Satisfaction--------->
+
+
+      <section id="client">
+        <div class="c-client">
+            <div class="client-content">
+                <h3 id="client-count">0</h3>
+                <p>HAPPY CLIENTS</p>
+            </div>
+            <div class="client-content">
+                <h3 id="satisfaction-count">0%</h3>
+                <p>SATISFACTION</p>
+            </div>
+        </div>
+      </section>
+
+    <!-------------------Progress--------------------->
+
+
+    <section id="progress-section">
+        <div class="progress-container">
+            <div class="progress-bar-wrapper">
+                <p>Integrity</p>
+                <div class="progress-bar">
+                    <span class="progress" data-percentage="100"></span>
+                </div>
+            </div>
+            <div class="progress-bar-wrapper">
+                <p>Reliability</p>
+                <div class="progress-bar">
+                    <span class="progress" data-percentage="97"></span>
+                </div>
+            </div>
+            <div class="progress-bar-wrapper">
+                <p>Professionalism</p>
+                <div class="progress-bar">
+                    <span class="progress" data-percentage="100"></span>
+                </div>
+            </div>
+            <div class="progress-bar-wrapper">
+                <p>Innovation</p>
+                <div class="progress-bar">
+                    <span class="progress" data-percentage="98"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!---------Currently Booking----------------->
+
+
+
+    <section id="booking">
+        <div class="book-text">
+          <h3>Get in touch with us</h3>
+          <button>Contact Us</button>
+        </div>
+      </section>
+
+
+
+    <!----------Testimonial--------------->
+
+    
+    
+
+
+      <!---------Testimonial----------------->
+
+      <div class="t-test">
+        <h3>Client's Testimonial<h3>
+        <hr>
+      </div>
+
+
+      <div class="testimonial-container">
+        <div class="arrows">
+          <div class="arrow left" onclick="plusSlides(-1)">&#10094;</div>
+          <div class="arrow right" onclick="plusSlides(1)">&#10095;</div>
+        </div>
+      
+        <div class="testimonial active">
+          <p>Chocolatesignatureevents is the very best! I didn't discover her on time and only used her for Nikkah, I should have used her for my Kamu also.</p>
+          <h5>#AllAboutUz</h5>
+          <!-- <h6>Allaboutus</h6> -->
+        </div>
+        <div class="testimonial">
+          <p>"Omg! I wanted to come over to ur hotel to deliver my cake to you as a sign of my appreciation ma. Thanks so much I really appreciate"</p>
+          <h5>#PS2024</h5>
+          <!-- <h6>#67890</h6> -->
+        </div>
+        <div class="testimonial">
+          <p>Good Morning Aunty Mimi, Happy New Year to you and your family, Kay and I are so grateful for all you did. Sorry this extra package is coming late, we planned to do it end of January when we've settled in. We sent something very little to you just to show pur appreciation.</p>
+          <h5>#Kitchenlovetale</h5>
+          <!-- <h6>#ABCDE</h6> -->
+        </div>
+        <div class="testimonial">
+          <p>"Madam Mimi, I don't even know where to start. From the beginning of the day till the end of the event, it was flawless. I was so impressed to be honest, even hubby complemented".</p>
+          <h5>#OGForever24</h5>
+          <!-- <h6>#FGHIJ</h6> -->
+        </div>
+      
+        <div class="dots">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+
+
+      <!---------Currently Booking----------------->
+
+
+
+      <!-- <section id="booking">
+        <div class="book-text">
+          <h3>Currently booking for 2024 and beyond</h3>
+          <button>Book Your Date Now</button>
+        </div>
+      </section> -->
+
+      
+
+     
+      <!---------------Subscribe-------------->
+
+     <div id="newsletter" class="newsletter-section">
+      <hr>
+      <h2>Stay updated</h2>
+      <p>Sign up with your email to receive news and updates, unsubscribe anytime.</p>
+      <form id="submit-to-google-sheet" class="newsletter-form">
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+          <button type="submit" id="subscribe-button">
+              <span id="dot-loading" class="dot-loading"></span>
+              Subscribe
+          </button>
+      </form>
+      <span id="msg"></span>
+      
+  </div>
+
+
+  <!--------------------------FOOTER--------------------------->
+
+
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="image/logo.png" alt="Logo">
+        </div>
+        <div class="footer-contact">
+            <p><img src="image/contact-icon.png" alt="Contact Icon"> +234903456688</p>
+            <p><img src="image/email-icon.png" alt="Email Icon"> chocolatesignatureevents@gmail.com</p>
+            <p><img src="image/location-icon.png" alt="Location Icon"> Kaduna</p>
+        </div>
+        <div class="footer-social">
+            <p>Follow Us on:</p>
+            <p>
+                <a href="https://instagram.com" target="_blank"><img src="image/instagram-icon.png" alt="Instagram Icon"></a>
+                <a href="https://facebook.com" target="_blank"><img src="image/facebook-icon.png" alt="Facebook Icon"></a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright">
+  <h2>Copyright@Chocolatesignatureevents 2024</h2>
+  <h5>Developed by <a href="https://betzalelco.xyz"><span>BetzalelCo</span></a></h5>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <!--------------------------SCRIPT FOR SUBSCRIBE--------------------------->
+  
+  <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzp6jXc29a6bWR56juxF5AWJg-F_0aLYuWyrmrLhz26oXwnHoVw7U6wV30sdcP6vui9/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+      const dotLoading = document.getElementById("dot-loading")
+      const subscribeButton = document.getElementById("subscribe-button")
+  
+      form.addEventListener('submit', e => {
+          e.preventDefault()
+          dotLoading.style.display = 'inline-block'
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => {
+                  dotLoading.style.display = 'none'
+                  msg.innerHTML = "Thank You For Subscribing!"
+                  setTimeout(function(){
+                      msg.innerHTML = ""
+                  },5000)
+                  form.reset()
+              })
+              .catch(error => {
+                  dotLoading.style.display = 'none'
+                  console.error('Error!', error.message)
+              })
+      })
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--========================Javascript==============================-->
+
+    <script src="script.js"></script>
+    <script src="service.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+
+
+</body>
+
+
+
+
+
+</html>
