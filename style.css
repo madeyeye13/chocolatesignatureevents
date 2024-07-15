@@ -43,7 +43,7 @@ a{
     --lightgold-color:#fff7eb;
     --white-color: white;
     --fade-out:rgb(85, 85, 85);
-    --dark-main-color:rgb(58, 50, 15);
+    --dark-main-color:rgb(20, 18, 8);
     --font-1:"Playfair Display", serif;
     --font-2: "Poppins", sans-serif;
     --font-3: "Sacramento", cursive;
@@ -105,7 +105,7 @@ a{
     background-color: white;
     height: 100%;
     transition: all 0.4s ease 0s;
-    top: 55px;
+    top: 5px;
     width: 70%;
     gap: 20px;
     right: 0px;
@@ -120,6 +120,9 @@ a{
 #menu-bar img {
     position: relative;
     top: -50px;
+    align-items: left;
+    left: -20px;
+    margin-bottom: 20px;
 }
 
 
@@ -127,7 +130,7 @@ a{
         text-decoration: none;
         color: var(--dark-main-color);
         font-weight: 400;
-        font-size: 27px;
+        font-size: 20px;
         font-family: var(--font-1);
 }
 
@@ -136,13 +139,20 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     position: relative;
     margin: 26px;
     font-weight: bold;
     font-family: var(--font-2);
     top:-90px;
+    text-align: left;
 }
+
+
+.botn {
+  display: none;
+}
+
 
 
 .slide-out {
@@ -282,7 +292,7 @@ a{
    #heroslide {
     position: relative;
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
     overflow: hidden;
   }
   
@@ -290,8 +300,10 @@ a{
     display: flex;
     flex-wrap: nowrap;
   }
+
+
   
-  .heroimg {
+  /* .heroimg {
     position: relative;
     min-width: 100%;
     height: 80vh;
@@ -300,6 +312,8 @@ a{
     background-size: cover;
     background-position: center;
   }
+
+
   
   .himage {
     width: 120%;
@@ -309,7 +323,30 @@ a{
     opacity: 0.9;
     position: relative;
     animation: zoomIn 10s infinite;
+  } */
+
+
+  .heroimg {
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    background: rgba(0, 0, 0, 0.433);
+    min-width: 100%;
+    height: 90vh;
+    
   }
+
+
+  .himage {
+    width: 130%;
+    height: 110%;
+    object-fit: contain;
+    mix-blend-mode: overlay;
+    opacity: 0.9;
+    position: relative;
+    animation: zoomIn 10s infinite;
+  } 
   
   @keyframes zoomIn {
     0% {
@@ -524,11 +561,12 @@ a{
   padding-right: 20px;
   font-size: 15px;
   margin-bottom: 30px;
+  color: var(--fade-out);
 }
 
 .wwdli.active h3,
 .wwdli.active i {
-  color: black;
+  color: var(--dark-main-color);
 }
 
 .wwdli.active i {
@@ -858,6 +896,31 @@ a{
 }
 
 
+/*-----------------Abt on Homepage------------------*/
+
+
+#abt {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#abt h2 {
+  font-weight: 300;
+  color: var(--gold-color);
+  margin-bottom: 20px;
+}
+
+#abt p {
+  line-height: 25px;
+  color: var(--dark-main-color);
+  font-size: 15px;
+}
+
+
 
 /*---------------Newsletter----------*/
 
@@ -955,7 +1018,7 @@ a{
 
 
 .footer {
-  /* background-color: var(--lightgold-color);  */
+  background-color: var(--dark-main-color); 
   padding: 20px;
   text-align: left;
 }
@@ -964,6 +1027,7 @@ a{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  color: var(--white-color);
 }
 
 .footer-logo img {
@@ -977,7 +1041,8 @@ a{
   align-items: center;
   font-weight: 400;
   font-size: 0.9em;
-  color: var(--dark-main-color);
+  color: var(--white-color);
+  font-family: var(--font-1);
 
 }
 
@@ -998,12 +1063,13 @@ a{
 
 .footer-social p a img {
   width: 20px; /* Adjust as needed */
-  /* height: 25px; */
+  
   margin-right: 30px;
 }
 
 .footer-social p {
   margin-top: 20px;
+  font-family: var(--font-1);
 }
 
 .footer-social p a {
@@ -1021,10 +1087,13 @@ a{
 .copyright h2, h5 {
   font-family: var(--font-2);
   text-align: center;
+  color: var(--white-color);
+  font-size: 10px;
+  
 }
 
 .copyright h2 {
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: 400;
   margin-bottom: 10px;
 }
