@@ -84,12 +84,12 @@
                    
               <div class="nav-link">   <a href="about.html">About</a></div>
                     
-              <div class="nav-link">   <a href="testimonial.html">Booking</a></div>
+              <div class="nav-link">   <a href="book.html">Booking</a></div>
           
               <div class="nav-link">   <a href="venreg.html">Vendor Registration</a></div>
 
 
-              <div  class="nav-link phone">   <a href="contacts.html">Contact Us</a></div>
+              <!-- <div  class="nav-link phone">   <a href="contacts.html">Contact Us</a></div> -->
               
               <div class="nav-link botn">
                 <button>Contact Us</button>
@@ -139,7 +139,16 @@
       <section id="about">
         <h2 data-aos="fade-up">Chocolate Signature Events</h2>
         <div class="about-content">
-            <p data-aos="fade-up" data-aos-delay="100">founded by the visionary Maryam Haruna, is the epitome of elegance and sophistication in wedding and event planning. As the Principal Experience Manager and CEO, Maryam brings her well-rounded expertise and passion for creating unforgettable experiences to every event. <br> <br>The company's mission is driven by Maryam's unwavering commitment to excellence, creativity, and personalized service. We specialize in curating luxurious and bespoke events tailored to your unique vision and needs. Whether it's a grand wedding, an intimate social gathering, or a corporate affair, our dedicated team ensures that every detail is meticulously planned and executed to perfection. <br><br>Maryam's vision for Chocolate Signature Events is to be the leading event planning company known for transforming dreams into reality. We aim to set new standards in the industry by consistently delivering exceptional and memorable events that exceed our clients' expectations. We strive to create experiences that are not just events but cherished memories.</p>
+            <p data-aos="fade-up" data-aos-delay="100">Founded in 2015 by Maryam Haruna, Chocolate Signature Events has been at the forefront of event management and planning; creating unforgettable experiences for clients. 
+
+              <br><br>From inception until date, the brand has gwon
+              With a track record of consistency and learning, our passion for excellence and meticulous attention to detail sets us apart in the industry. 
+              
+              Growth, dedication and sheer passion has led us on an unrelenting journey, carving a niche for ourself in the events business. 
+              
+              <br><br>From intimate gatherings, grand celebrations to corporate events, our team of experienced professionals are work together to make every occasion a cherished memory. 
+              
+              Chocolate Signature aims to become an inspiration to all and sundry in the events industry by modelling a template of what events planning and management should look like in Nigeria and Africa at large.</p>
             
             <div class="mary">
 
@@ -280,6 +289,70 @@
           padding-right: 30px;
           line-height: 30px;
         }
+
+
+        /*----------------------------FAQ------------------*/
+
+
+
+        .faq-container {
+            /* background-color: var(--white-color); */
+            border-radius: 2px;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+            padding: 20px;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 80px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 400;
+            color: var(--gold-color);
+            padding: 10px;
+            background-color: var(--fadegold-color);
+            border-radius: 2px;
+            transition: background-color 0.3s;
+        }
+
+        .faq-question:hover {
+            background-color: var(--dark-main-color);
+            color: var(--white-color);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            padding-left: 10px;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-item.active .faq-question {
+            background-color: var(--gold-color);
+            color: var(--white-color);
+        }
+
+        .faq-answer p {
+            margin: 0;
+        }
+
+        .que {
+          margin-top: 0px;
+          text-align: center;
+          font-size: 1.5em;
+        }
         
 
     </style>
@@ -332,6 +405,67 @@
             </div>
         </div>
     </section>
+
+
+
+    <!----------------------------FREQUENTLY ASKED QUESTIONS------------------------------->
+
+    <div class="que">
+      <h3>Let's Answer Your Questions</h3>
+    </div>
+
+
+    <div class="faq-container">
+      <div class="faq-item">
+          <div class="faq-question">
+              How much does event planning cost?
+              <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="faq-answer">
+              <p>The cost of an event planning can vary depending on the size and type of the event as well as the location.</p>
+          </div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question">
+              How far in advance should I book my event?
+              <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="faq-answer">
+              <p>It is best to book an event planner as soon as possible, in fact immediately you are sure of the event date especially if you are planning a large or complex event. <br><br>Event planners book up several months or even a year in advance.</p>
+          </div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question">
+              What happens on the day of the event?
+              <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="faq-answer">
+              <p>On the day of the event, the event planner will oversee all aspects of the event, including managing the vendors, coordinating entertainment and handling any issue that may arise. They will work to ensure the event runs smoothly and that the guests have a great experience.</p>
+          </div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question">
+              Are you the one to do the make-up and cake bake?
+              <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="faq-answer">
+              <p>A professional event planner is not a decorator or cake vendor or a make-up artist. I can only work side by side with my vendors.</p>
+          </div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question">
+              What is the role of the client in the event planning?
+              <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="faq-answer">
+              <p>Now the client does nothing other than to sit and enjoy his or her event. <br><br>The event planner will work closely with the client to ensure that their vision for the event is achieved.</p>
+          </div>
+      </div>
+  </div>
+
+
+
+
 
 
 
@@ -528,7 +662,7 @@
         <div class="footer-contact">
             <p><img src="image/contact-icon.png" alt="Contact Icon"> +234903456688</p>
             <p><img src="image/email-icon.png" alt="Email Icon"> chocolatesignatureevents@gmail.com</p>
-            <p><img src="image/location-icon.png" alt="Location Icon"> Kaduna</p>
+            <p><img src="image/location-icon.png" alt="Location Icon"> Sheu Laminu Crescent Rimi Plaza Opposite Total Filling Station, Shop No 11 Second Floor, Kaduna.</p>
         </div>
         <div class="footer-social">
             <p>Follow Us on:</p>
@@ -592,11 +726,26 @@
 
 
 
+<!--=============================FREQUENTLY ASKED QUESTION JS================================-->
 
 
+      <script>
+        const faqItems = document.querySelectorAll('.faq-item');
 
-
-
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+                const icon = item.querySelector('.faq-question i');
+                if (item.classList.contains('active')) {
+                    icon.classList.remove('fa-chevron-right');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-right');
+                }
+            });
+        });
+      </script>
 
 
 
