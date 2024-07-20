@@ -1,26 +1,38 @@
-
 document.addEventListener("DOMContentLoaded", function() {
-    const menuBtn = document.querySelector('.fa-bars');
-    const closeBtn = document.querySelector('#close');
-    const menuBar = document.querySelector('#menu-bar');
+  const menuBtn = document.querySelector('.fa-bars');
+  const closeBtn = document.querySelector('#close');
+  const menuBar = document.querySelector('#menu-bar');
 
-    //when i click on (open menu) = i want you to display the close button
+  // Toggle menu visibility
+  menuBtn.addEventListener('click', function() {
+      menuBar.classList.toggle('slide-out');
+      menuBar.classList.toggle('slide-in');
+      menuBtn.classList.toggle('hide');
+      closeBtn.classList.toggle('hide');
+  });
 
-    menuBtn.addEventListener('click', function() {
-        menuBar.classList.toggle('slide-out');
-        menuBar.classList.toggle('slide-in');
-        menuBtn.classList.toggle('hide');
-        closeBtn.classList.toggle('hide');
-    });
+  closeBtn.addEventListener('click', function() {
+      menuBar.classList.toggle('slide-in');
+      menuBar.classList.toggle('slide-out');
+      menuBtn.classList.toggle('hide');
+      closeBtn.classList.toggle('hide');
+  });
 
-//when i click on (open menu) = i want you to display the close button
+ // Highlight the active link
+ const currentPage = window.location.pathname.split("/").pop(); // Get current page name
+ const navLinks = document.querySelectorAll('.nav-link a'); // Select all nav links
 
-    closeBtn.addEventListener('click', function() {
-        menuBar.classList.toggle('slide-in');
-        menuBar.classList.toggle('slide-out');
-        menuBtn.classList.toggle('hide');
-        closeBtn.classList.toggle('hide');
-    });
+ navLinks.forEach(link => {
+     // Check if the href attribute of the link matches the current page name
+     if (link.getAttribute('href') === currentPage || 
+         (currentPage === "" && link.getAttribute('href') === "index.html")) {
+         link.classList.add('active'); // Add 'active' class to the matching link
+     } else {
+         link.classList.remove('active'); // Remove 'active' class from other links
+     }
+ });
+
+ 
 });
 
 

@@ -89,10 +89,10 @@
               <div class="nav-link">   <a href="venreg.html">Vendor Registration</a></div>
 
 
-              <!-- <div  class="nav-link phone">   <a href="contacts.html">Contact Us</a></div> -->
+              <div  class="nav-link phone">   <a href="contact.html">Contact Us</a></div>
               
               <div class="nav-link botn">
-                <button>Contact Us</button>
+                <a href="contact.html"><button>Contact Us</button></a>
               </div>
 
             </div>
@@ -110,8 +110,8 @@
       <!---================Hero Section=======================-->
 
       
-      <section id="gallery">
-        <div class="gallerytext">
+      <section id="gallery1">
+        <div class="gallerytext1">
             <h2>Gallery</h2>
         </div>
       </section>
@@ -176,7 +176,7 @@
                 <img src="fsimage/3.jpg" data-index="3">
             </div>
             <div class="fsimge">
-                <img src="fsimage/4.jpg" data-index="4">
+                <img src="fsimage/8.jpg" data-index="4">
             </div>
             <div class="fsimge">
                 <img src="fsimage/5.jpg" data-index="5">
@@ -186,7 +186,7 @@
             </div>
 
             <div class="fsimge">
-                <img src="fsimage/7.jpg" data-index="7">
+                <img src="fsimage/14.jpg" data-index="7">
             </div>
 
             <div class="fsimge">
@@ -216,7 +216,7 @@
             </div>
 
             <div class="fsimge">
-                <img src="fsimage/14.jpg" data-index="14">
+                <img src="fsimage/2.jpg" data-index="14">
             </div>
             
         </div>
@@ -244,11 +244,12 @@
 
 
 
-    <div class="video-container2">
-        <h2>Behind The Scene #F&S24</h2>
-        <video controls poster="fsimage/fsthumbnail.png">
-            <source src="video/sada.mp4" type="video/mp4">
-        </video>
+    <div class="video-container4">
+        <h2>Behind The Scene #F&S</h2>
+        <div>
+            <iframe src="https://player.vimeo.com/video/987629393?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="sada"></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
     </div>
 
 
@@ -329,7 +330,7 @@
             --font-3: "Sacramento", cursive;
         }
 
-        #gallery{
+        #gallery1{
           display: flex;
           position: relative;
           opacity: 10;
@@ -348,11 +349,11 @@
           
         }
 
-        .gallerytext {
+        .gallerytext1 {
           text-align: left;
         }
 
-        .gallerytext h2 {
+        .gallerytext1 h2 {
           color: rgb(255, 185, 115);
           font-size: 2.5em;
           padding-right: 30px;
@@ -594,18 +595,24 @@
         /*---------------------------FSvideo-----------------------*/
 
 
-    .video-container2 {
-  text-align: center; /* Centers the video */
-  margin: 80px 0; /* Adds some space around the video */
+        .video-container4 {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  margin-top: 80px;
 }
 
-video {
-  max-width: 100%; /* Ensures the video is responsive */
-  height: 100%; /* Maintains the aspect ratio */
+.video-container4 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-
-.video-container2 h2 {
+.video-container4 h2 {
+    text-align: center;
     color: var(--gold-color);
     margin-bottom: 30px;
     font-size: 20px;
@@ -630,8 +637,8 @@ video {
         
         <div class="footer-contact">
             <p><img src="image/contact-icon.png" alt="Contact Icon"> +234903456688</p>
-            <p><img src="image/email-icon.png" alt="Email Icon"> chocolatesignatureevents@gmail.com</p>
-            <p><img src="image/location-icon.png" alt="Location Icon"> Sheu Laminu Crescent Rimi Plaza Opposite Total Filling Station, Shop No 11 Second Floor, Kaduna.</p>
+            <p><img src="image/email-icon.png" alt="Email Icon"> chocolatesignatureevents01@gmail.com</p>
+            <p><img src="image/location-icon.png" alt="Location Icon"> Shehu Laminu Crescent Rimi Plaza Opposite Total Filling Station, Shop No 11 Second Floor, Kaduna.</p>
         </div>
         <div class="footer-social">
             <p>Follow Us on:</p>

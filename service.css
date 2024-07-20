@@ -622,7 +622,7 @@
 
 #vendor-registration h2 {
   font-size: 2.5em;
-  color: var(--dark-main-color);
+  color: var(--gold-color);
   margin-bottom: 20px;
   text-align: left;
   font-weight: 500;
@@ -638,6 +638,7 @@
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
+  font-weight: 500;
 }
 
 #vendor-registration .required {
@@ -649,7 +650,7 @@
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--gold-color);
   border-radius: 5px;
 }
 
