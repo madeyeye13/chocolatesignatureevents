@@ -9,7 +9,10 @@
       display:none;
     }
   
-    
+    .gimagefather {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   
   }
 
@@ -885,7 +888,12 @@
   font-size: 1.9em;
 }
 
-
+.gimagefather {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 40px;
+  padding-right: 40px;
+}
 
 
 }
@@ -1016,7 +1024,12 @@
     
 
 
-
+    .gimagefather {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding-left: 40px;
+      padding-right: 40px;
+    }
 
 
 
@@ -1489,6 +1502,12 @@
         padding-right: 40px;
       }
 
+     
+      .gfmom {
+        display: flex;
+        grid-template-columns: repeat(3, 1fr) ;
+      }
+
 
 
 
@@ -1912,13 +1931,13 @@
 
       /*-----------------------Gallery CSS-------------*/
 
-    .gimagefather {
+    /* .gimagefather {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-    }
+    } */
 
 
-    /*---------------------------Gallery------------------*/
+    /*---------------------------GalleryHero------------------*/
 
 
     #gallery{
