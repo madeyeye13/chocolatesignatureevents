@@ -893,7 +893,17 @@
   grid-template-columns: repeat(2, 1fr);
   padding-left: 40px;
   padding-right: 40px;
+  
 }
+
+
+
+.fsimgee {
+  
+  padding-left: 40px;
+   padding-right: 40px;
+  
+ }
 
 
 }
@@ -1033,8 +1043,10 @@
 
 
 
-    }
+    
 
+
+  }
 
 
 
@@ -1078,12 +1090,12 @@
               position:fixed;
              height:120px;
              background-color:rgba(255, 0, 0, 0);
-               visibility: visible;
-               justify-content:center;
-               top:-50px;
-               width: 100%;
-               left:80px;
-           box-shadow: none;
+              visibility: visible;
+              justify-content:center;
+              top:-50px;
+              width: 100%;
+              left:80px;
+              box-shadow: none;
             }
             
             #menu-bar img {
@@ -1510,10 +1522,41 @@
 
 
 
+      .fsimgee {
+        
+       padding-left: 40px;
+        padding-right: 40px;
+       
+      }
 
 
+      /*--------------------About-----------------*/
 
 
+      .about-content {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+
+      .about-content img {
+        width: 100%;
+        
+      }
+
+
+      .our_tm {
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+
+
+      .faq_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Adjust as necessary */
+        width: 100%;
+    }
 
 
     }
